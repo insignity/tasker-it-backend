@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+package-lock.json
+
+# env & secrets
+.env
+.env.*.local
+*.pem
+*.key
+
+# build / tools
+.prisma/
+dist/
+coverage/
+npm-debug.log*
+
+# editors/OS
+.idea/
+.vscode/
+.DS_Store
