@@ -1,0 +1,4 @@
+api.5.161.70.241.nip.io {
+  encode gzip
+  reverse_proxy app:4000
+}
