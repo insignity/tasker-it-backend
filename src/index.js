@@ -6,12 +6,12 @@ import taskRoutes from "./routes/task.js";
 
 dotenv.config();
 const app = express();
-var superman = "superpuperman"
 
 app.use(cors());
 app.use(express.json());
 
-app.get("/health", (_req, res) => res.json({ status: "ok" }));
+app.get("/health", (_req, res) =>
+    res.json({status: "ok", deployed: new Date().toISOString()}));
 
 app.use("/auth", authRoutes);
 app.use("/tasks", taskRoutes);
