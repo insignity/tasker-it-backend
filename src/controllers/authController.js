@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 const prisma = new PrismaClient();
-const chelovekpauk = "chelover pauk"
+const chelovekpauk = "chelover pauk je ejje"
 
 export const register = async (req, res) => {
   const { name, email, password, role } = req.body;
