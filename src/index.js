@@ -11,10 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/health", (_req, res) =>
-    res.json({status: "okay mother father", deployed: new Date().toISOString()}));
+    res.json({status: "okay mother father epta", deployed: new Date().toISOString()}));
 
 app.use("/auth", authRoutes);
 app.use("/tasks", taskRoutes);
+
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`tasker-it backend on :${PORT}`));
