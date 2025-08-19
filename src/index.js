@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/health", (_req, res) =>
-    res.json({status: "ok", deployed: new Date().toISOString()}));
+    res.json({status: "okay mother father", deployed: new Date().toISOString()}));
 
 app.use("/auth", authRoutes);
 app.use("/tasks", taskRoutes);
